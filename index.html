@@ -11,21 +11,16 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Пиццерия.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Пиццерия" startnode="2" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="0473A7D0-0031-4E55-AE48-2E9070109E84" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-link
 {
-color: #308EEC;
-}
-tw-story
-{
-font-family: Calibri;
-font-size: 24px;
+	color: #308EEC;
 }
 tw-passage
 {
-width: 100%;
-color: #2D2727;
-padding: 30px;
-border: 1px solid #7a7b7e;
-background: #fffffffd;
-border-radius: 15px;
+	width: 100%;
+	color: #2D2727;
+	padding: 30px;
+	border: 1px solid #7a7b7e;
+	background: #fffffffd;
+	border-radius: 15px;
 }
 tw-sidebar
 {
@@ -40,6 +35,7 @@ tw-sidebar
 	background-color: transparent;
 }
 tw-story {
+	font-size: 24px;
   	padding: 10% 20%;
 	background-color: #2D2727;
   	background-image: url("https://i.imgur.com/5jEkM3c.jpg");
@@ -47,9 +43,18 @@ tw-story {
 	color: black;
 	font-family: Calibri;
 }
+button, input, textarea {
+    outline: 0;
+}
 tw-link.visited
 {
-color: #6DA9E4;
+	color: #6DA9E4;
+}
+@media only screen and (max-width: 500px) {
+	tw-story {
+		padding: 5% 5%;
+      	font-size: 20px;
+	}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Приступить к игре" tags="" position="1075,300" size="100,100">(set: $money to 1000)
 Вы являетесь начинающим предпринимателем. В игре вам предстоит содержать свою пиццерию и не обанкротиться. У вас очень ограниченный бюджет, поэтому это будет не слишком просто. Ваш стартовый капитал - $money долларов.
 Первым делом, вам нужно арендовать помещение. Вам очень повезло, ваш друг Владислав является риелтором, и он с радостью подскажет доступные вам варианты. Вы звоните своему другу и договариваетесь о встрече в кафе.
